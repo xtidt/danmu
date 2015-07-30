@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery弹幕插件</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Custom styles for our template -->
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- Intro -->
+<div class="container text-center">
+    <br>
+    Demo
+    <br>
+
+    <div id="danmuarea" class="text-center">
+        <div id="danmu">
+        </div>
+    </div>
+    <br>
+    <div class="text-center ctr">
+        <br>
+        <button type="button" data-action="start" >弹幕开始/继续</button>
+        <button type="button"  data-action="pause">弹幕暂停</button>
+        <br>
+        显示弹幕:<input type='checkbox' checked='checked' id='ishide'>
+        <br>
+        弹幕透明度:
+        <input type="range" name="op" id="op"  value="100"> <br>
+        当前弹幕运行时间(分秒)：<span id="time"></span><br>
+        设置当前弹幕时间(分秒)： <input type="text" id="set_time" max=20/>
+        <button type="button" data-action="set">设置</button>
+        <br>
+        发弹幕:
+        <select name="color" id="color">
+            <option value="white">白色</option>
+            <option value="red">红色</option>
+            <option value="green">绿色</option>
+            <option value="blue">蓝色</option>
+            <option value="yellow">黄色</option>
+        </select>
+        <br>
+        <select name="size" id="text_size">
+            <option value="1">大文字</option>
+            <option value="0">小文字</option>
+        </select>
+
+        <select name="position" id="position">
+            <option value="0">滚动</option>
+            <option value="1">顶端</option>
+            <option value="2">底端</option>
+        </select>
+
+        <select name="position" id="duration">
+            <option value="">选择时间</option>
+            <option value="1000">1秒</option>
+            <option value="5000">5秒</option>
+            <option value="10000">10秒</option>
+            <option value="20000">20秒</option>
+            <option value="30000">30秒</option>
+        </select>
+        <br>
+        <input type="textarea" id="text" max=300/>
+
+        <button type="button" data-action="send">发送</button>
+    </div>
+    <br>
+</div>
+<br>
+</div>
+<!-- /container -->
+
+<script src="assets/js/require.config.js"></script>
+<script src="assets/js/jquery-1.11.1.min.js"></script>
+<script src="assets/js/jquery.easing.min.js"></script>
+<script src="assets/js/jquery.danmu.js"></script>
+<script src="script/_Data.js"></script>
+<script data-main="../../script/main" src="assets/js/require.js"></script>
+</body>
+</html>
