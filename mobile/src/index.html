@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>demo</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/danmu.min.css">
+    <!-- 弹幕 -->
+    <script src="https://cdn.bootcss.com/gsap/latest/TweenLite.min.js"></script>
+    <script src="https://cdn.bootcss.com/gsap/latest/plugins/CSSPlugin.min.js"></script>
+    <script type="text/javascript" src="./lib/danmu.tween.min.js"></script>
+
+</head>
+<style type="text/css">
+    .container {
+        width: 100%;
+        height: 300px;
+        border: 1px solid #000;
+        margin: 20px auto;
+        position: relative;
+        background: #353535;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <!--弹幕层-->
+        <div class="danmuMask">
+            <div class="subdanmuMask"></div>
+        </div>
+    </div>
+
+    <button class="btn" onClick="add()">发送弹幕</button>
+    <button class="btn" onClick="officialadd()">官方发送弹幕</button>
+    <button class="btn" onClick="publishAdd()">监听发送弹幕</button>
+
+    <script type="text/javascript" src="./js/main.min.js"></script>
+</body>
+
+</html>
