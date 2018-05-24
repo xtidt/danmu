@@ -1,3 +1,6 @@
+![图标](http://77fmfo.com1.z0.glb.clouddn.com/1.png)
+
+
 ## PC端发送弹幕
 
 
